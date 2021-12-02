@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hobby - Beautiful Garden</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <svg style="display: none;">
+        <symbol id="facebook" viewBox="0 0 24 24">
+            <g>
+                <path
+                    d="M17.525,9H14V7c0-1.032,0.084-1.682,1.563-1.682h1.868v-3.18C16.522,2.044,15.608,1.998,14.693,2 C11.98,2,10,3.657,10,6.699V9H7v4l3-0.001V22h4v-9.003l3.066-0.001L17.525,9z" />
+            </g>
+        </symbol>
+
+        <symbol id="twitter" viewBox="0 0 18 16">
+            <g>
+                <path
+                    d="M18 2.34649L16.0714 2.67597L17.3571 1.02856L15.1071 1.68752C12.2143 -1.60731 7.71429 2.01701 9 4.98236C3.85714 4.98236 1.28571 1.02856 1.28571 1.02856C1.28571 1.02856 -0.642857 3.99391 2.57143 6.30029L0.642857 5.64133C0.642857 7.61823 1.92857 8.93616 4.17857 9.59513H1.92857C3.21429 12.231 5.46429 12.231 5.46429 12.231C5.46429 12.231 3.53571 13.8784 0 13.8784C10.6071 19.1502 17.0357 9.26565 16.0714 3.99391L18 2.34649Z" />
+            </g>
+        </symbol>
+
+        <symbol id="pinterest" viewBox="0 0 15 21">
+            <g>
+                <path
+                    d="M7.96908 0.380859C3.96079 0.380859 0 3.12158 0 7.55739C0 10.3782 1.54694 11.981 2.48448 11.981C2.87137 11.981 3.09388 10.8751 3.09388 10.5629C3.09388 10.1904 2.16822 9.39672 2.16822 7.84588C2.16822 4.62433 4.55894 2.34008 7.65282 2.34008C10.3129 2.34008 12.2818 3.89091 12.2818 6.73998C12.2818 8.86781 11.4499 12.8587 8.75412 12.8587C7.78157 12.8587 6.94904 12.1374 6.94904 11.104C6.94904 9.58905 7.98033 8.12284 7.98033 6.55983C7.98033 3.90758 4.31205 4.38841 4.31205 7.59393C4.31205 8.26709 4.39393 9.01205 4.68707 9.62559C4.14767 12.006 3.04638 15.552 3.04638 18.0042C3.04638 18.7613 3.15201 19.5069 3.22201 20.2641C3.35451 20.4167 3.28826 20.4006 3.4914 20.3244C5.46023 17.5593 5.39022 17.0188 6.28089 13.4004C6.76153 14.3384 8.00346 14.8429 8.98787 14.8429C13.1362 14.8429 15 10.6956 15 6.95731C15 2.97862 11.648 0.382142 7.96846 0.382142L7.96908 0.380859Z" />
+            </g>
+        </symbol>
+
+        <symbol id="linkedin" viewBox="0 0 16 16">
+            <g>
+                <path
+                    d="M2.78605 4.18773C3.78297 4.18773 4.59114 3.35499 4.59114 2.32775C4.59114 1.30051 3.78297 0.467773 2.78605 0.467773C1.78912 0.467773 0.980957 1.30051 0.980957 2.32775C0.980957 3.35499 1.78912 4.18773 2.78605 4.18773Z" />
+                <path
+                    d="M6.29562 5.59694V15.9159H9.40504V10.813C9.40504 9.46645 9.65089 8.16244 11.2712 8.16244C12.8692 8.16244 12.889 9.70191 12.889 10.898V15.9168H16.0001V10.2579C16.0001 7.47814 15.4193 5.34192 12.2661 5.34192C10.7523 5.34192 9.73751 6.19794 9.32254 7.00805H9.28046V5.59694H6.29562ZM1.22849 5.59694H4.34285V15.9159H1.22849V5.59694Z" />
+            </g>
+        </symbol>
+    </svg>
+
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__top">
+                <a href="#" class="logo__link"><img src="img/logo.svg" alt="Logo" class="logo__img">Hobby</a>
+                <ul class="nav">
+                    <li class="nav__item"><a href="#" class="nav__link" data-scroll="#header">Home</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link" data-scroll="#about">About Us</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link" data-scroll="#service">Service</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link" data-scroll="#contact">Contact</a></li>
+                </ul>
+                <button class="login__btn" type="button" name="button">Login</button>
+            </div>
+            <!--/header__top-->
+
+            <div class="header__inner">
+                <div class="header__text">
+                    <h1 class="header__title">Make a <span class="header__title--span">Beautiful Garden</span> with Your
+                        own Hand</h1>
+                    <p class="header__description">There are many variations of passages of Lorem Ipsum available,
+                        but the majority have suffered alteration in some form,</p>
+                    <button class="main__btn">Shop Now</button>
+                </div>
+                <img src="img/header__img.svg" alt="" class="header__img">
+            </div>
+            <!--/header__inner-->
+        </div>
+        <!--/container-->
+
+        <div class="header__circle--green"></div>
+        <div class="header__circle--yellow"></div>
+    </header>
+
+    <section class="we__give">
+        <div class="give__circle--yellow"></div>
+        <div class="container">
+            <div class="we__give--content">
+                <div class="we__give--text">
+                    <h2 class="we__give--title">We Give Awesome Landscape Service.</h2>
+                    <p class="we__give--description">It is a long established fact that a reader will be distracted by
+                        the thing.</p>
+                </div>
+                <ul class="we__give--list">
+                    <li class="we__give--item" value="25+">Complete Project Per Month.</li>
+                    <li class="we__give--item" value="10+">Years Practical Experience.</li>
+                    <li class="we__give--item" value="60+">Awesome Team Members.</li>
+                </ul>
+            </div>
+            <!--/we__give-content-->
+        </div>
+        <!--/container-->
+    </section>
+    <!--/we__give-->
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about__content">
+                <img src="img/about__img.svg" alt="" class="about__img">
+                <div class="about__text">
+                    <h2 class="about__title">We Are Professional Gardener!</h2>
+                    <p class="about__description">Morbi magna metus, scelerisque at risus a, tristique laoreet orci.
+                        Duis posuere eros vel dui pulvinar,
+                        pulvinar molestie erat iaculis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+                        posuere cubilia.</p>
+                    <button class="main__btn">Read More</button>
+                </div>
+                <div class="about__circle--green"></div>
+            </div>
+            <!--/about__content-->
+        </div>
+        <!--/container-->
+    </section>
+
+    <section class="service" id="service">
+        <div class="container">
+            <div class="service__content">
+                <div class="service__text">
+                    <h2 class="service__title">Professional Service</h2>
+                    <p class="service__description">There are many variations of passages of Lorem
+                        Ipsum available, Duis posuere eros vel dui pulvinar, pulvinar molestie erat iaculis. Vestibulum
+                        ante
+                        ipsum primis in faucibus orci luctus et ultrices posue</p>
+                    <p class="service__description">Mauris vel auctor enim many variations. There are many variations of
+                        passages of Lorem Ipsum .</p>
+                    <button class="main__btn">Read More</button>
+                </div>
+                <div class="service__list">
+                    <div class="service__item--left">
+                        <img src="img/service__item1.svg" alt="" class="service__img">
+                        <h3 class="item__title">Plant Trees</h3>
+                        <p class="item__description">There are many variations of passages long established fact reader
+                        </p>
+                    </div>
+                    <div class="service__item--right">
+                        <div class="service__item">
+                            <img src="img/service__item2.svg" alt="" class="service__img">
+                            <h3 class="item__title">Pruning plants</h3>
+                            <p class="item__description">There are many of the variations of passages long established
+                                fact reader</p>
+                        </div>
+                        <div class="service__item">
+                            <img src="img/service__item3.svg" alt="" class="service__img">
+                            <h3 class="item__title">Plant Trees</h3>
+                            <p class="item__description">There are many variations of passages long established fact
+                                reader</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="service__circle--yellow"></div>
+                <div class="service__circle--green"></div>
+                <div class="service__circle--green2"></div>
+                <div class="service__cy"></div>
+                <div class="service__cg"></div>
+                <div class="service__cg2"></div>
+            </div>
+            <!--/service__content-->
+        </div>
+        <!--/container-->
+    </section>
+
+    <section class="choose">
+        <div class="container">
+            <div class="choose__content">
+                <h2 class="choose__title">Choose your Dream Plant</h2>
+                <p class="choose__description">Many variations of passages of Lorem Ipsum available, but the majority
+                    have suffered alteration in some form,</p>
+                <ul class="choose__list">
+                    <li class="choose__card">
+                        <img src="img/plant__c1.svg" alt="" class="choose__img">
+                        <h3 class="card__title">Indoors Tropical Plant</h3>
+                        <div class="card__rating">
+                            <div class="card__stars" data-total-value="5">
+                                <div class="star" data-item-value="5"><img src="img/star.svg" alt=""></div>
+                                <div class="star" data-item-value="4"><img src="img/star.svg" alt=""></div>
+                                <div class="star" data-item-value="3"><img src="img/star.svg" alt=""></div>
+                                <div class="star" data-item-value="2"><img src="img/star.svg" alt=""></div>
+                                <div class="star" data-item-value="1"><img src="img/star.svg" alt=""></div>
+                            </div>
+                            <p class="rating__stats">5.0<span class="">(134)</span></p>
+                        </div>
+                        <div class="card__price">
+                            <div class="price__inner">
+                                <p class="price__title">Price</p>
+                                <h4 class="price">$150</h4>
+                            </div>
+                            <button class="add__btn">Add To Cart</button>
+                        </div>
+                    </li>
+
+                    <li class="choose__card">
+                        <img src="img/plant__c2.svg" alt="" class="choose__img">
+                        <h3 class="card__title">Monstera Deliciosa Care</h3>
+                        <div class="card__rating">
+                            <div class="card__stars" data-total-value="5">
+                                <div class="star" data-item-value="5"><img src="img/star.svg" alt=""></div>
+                                <div class="star" data-item-value="4"><img src="img/star.svg" alt=""></div>
+                                <div class="star" data-item-value="3"><img src="img/star.svg" alt=""></div>
+                                <div class="star" data-item-value="2"><img src="img/star.svg" alt=""></div>
+                                <div class="star" data-item-value="1"><img src="img/star.svg" alt=""></div>
+                            </div>
+                            <p class="rating__stats">5.0<span class="">(120)</span></p>
+                        </div>
+                        <div class="card__price">
+                            <div class="price__inner">
+                                <p class="price__title">Price</p>
+                                <h4 class="price">$200</h4>
+                            </div>
+                            <button class="add__btn">Add To Cart</button>
+                        </div>
+                    </li>
+
+                    <li class="choose__card">
+                        <img src="img/plant__c3.svg" alt="" class="choose__img">
+                        <h3 class="card__title">Indoors Leaf Potted</h3>
+                        <div class="card__rating">
+                            <div class="card__stars" data-total-value="5">
+                                <div class="star" data-item-value="5"><img src="img/star.svg" alt=""></div>
+                                <div class="star" data-item-value="4"><img src="img/star.svg" alt=""></div>
+                                <div class="star" data-item-value="3"><img src="img/star.svg" alt=""></div>
+                                <div class="star" data-item-value="2"><img src="img/star.svg" alt=""></div>
+                                <div class="star" data-item-value="1"><img src="img/star.svg" alt=""></div>
+                            </div>
+                            <p class="rating__stats">5.0<span class="">(183)</span></p>
+                        </div>
+                        <div class="card__price">
+                            <div class="price__inner">
+                                <p class="price__title">Price</p>
+                                <h4 class="price">$150</h4>
+                            </div>
+                            <button class="add__btn">Add To Cart</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!--/choose__content-->
+        </div>
+        <!--/container-->
+    </section>
+
+    <section class="subscribe">
+        <div class="container">
+            <div class="subscribe__content">
+                <h2 class="subscribe__title">Ready to bring idea for your garden?</h2>
+                <p class="subscribe__description">I must explain to you how all this mistaken idea of denouncing
+                    pleasure
+                    and praising pain was born and I will give you a complete</p>
+                <form action="" class="subscribe__form" name="subscribe">
+                    <input type="text" class="subscribe__input" name="email" placeholder="Enter your email" required>
+                    <button type="button" class="subscribe__btn">Subscribe</button>
+                </form>
+                <div class="subscribe__circle--green"></div>
+                <div class="subscribe__circle--yellow"></div>
+            </div>
+            <!--/subscribe__content-->
+        </div>
+        <!--/container-->
+    </section>
+
+    <section class="contacts" id="contact">
+        <div class="container">
+            <div class="contacts__content">
+                <div class="socials">
+                    <a href="#" class="logo__link"><img src="img/logo.svg" alt="Logo" class="logo__img">Hobby</a>
+                    <p class="socials__description">There are many variations of pass is ages of Lorem available,
+                        but the majority have suffered alteration in injected humour.</p>
+                    <ul class="socials__list">
+                        <li class="social__item"><a href="#" class="social__link" target="_blank"><svg
+                                    class="social__icon">
+                                    <use xlink:href="#facebook"></use>
+                                </svg></a></li>
+                        <li class="social__item"><a href="#" class="social__link" target="_blank"><svg
+                                    class="social__icon">
+                                    <use xlink:href="#twitter"></use>
+                                </svg></a></li>
+                        <li class="social__item"><a href="#" class="social__link" target="_blank"><svg
+                                    class="social__icon">
+                                    <use xlink:href="#pinterest"></use>
+                                </svg></a></li>
+                        <li class="social__item"><a href="#" class="social__link" target="_blank"><svg
+                                    class="social__icon">
+                                    <use xlink:href="#linkedin"></use>
+                                </svg></a></li>
+                    </ul>
+                </div>
+                <!--/socials-->
+                <div class="company">
+                    <h4 class="links__title">Company</h4>
+                    <ul class="links__list">
+                        <li class="links__item"><a href="#" class="links__link">About</a></li>
+                        <li class="links__item"><a href="#" class="links__link">History</a></li>
+                        <li class="links__item"><a href="#" class="links__link">Vision & Mission</a></li>
+                        <li class="links__item"><a href="#" class="links__link">Career</a></li>
+                        <li class="links__item"><a href="#" class="links__link">Legal Notice</a></li>
+                        <li class="links__item"><a href="#" class="links__link">Blog & News</a></li>
+                    </ul>
+                </div>
+                <!--/company-->
+                <div class="Support">
+                    <h4 class="links__title">Support</h4>
+                    <ul class="links__list">
+                        <li class="links__item"><a href="#" class="links__link">Contact</a></li>
+                        <li class="links__item"><a href="#" class="links__link">FAQ</a></li>
+                        <li class="links__item"><a href="#" class="links__link">Help Center</a></li>
+                        <li class="links__item"><a href="#" class="links__link">Privacy Policy</a></li>
+                        <li class="links__item"><a href="#" class="links__link">Term & Service</a></li>
+                        <li class="links__item"><a href="#" class="links__link">Community</a></li>
+                    </ul>
+                </div>
+                <!--/support-->
+                <div class="contact">
+                    <h4 class="contact__title">Contact</h4>
+                    <a href="https://goo.gl/maps/i9gjDedj7zYLJz4HA" class="contact__link"
+                        target="_blank">Mirabazar-Subhanighat Rd, Sylhet-Bangladesh</a>
+                    <h4 class="contact__title">Email Us</h4>
+                    <a href="mailto:useremail@gmail.com" class="contact__link">useremail@gmail.com</a>
+                    <h4 class="contact__title">Call Us</h4>
+                    <a href="tel:+622120022012" class="contact__link">+6221.2002.2012</a>
+                </div>
+            </div>
+            <!--/contacts__content-->
+        </div>
+        <!--/container-->
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <img src="img/footer__plant1.svg" alt="" class="footer__img">
+                <img src="img/footer__plant2.svg" alt="" class="footer__img">
+                <img src="img/footer__plant3.svg" alt="" class="footer__img">
+                <img src="img/footer__plant4.svg" alt="" class="footer__img">
+                <img src="img/footer__plant5.svg" alt="" class="footer__img">
+                <div class="footer__circle--yellow"></div>
+            </div>
+            <!--/footer__content-->
+        </div>
+        <!--/container-->
+    </footer>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
