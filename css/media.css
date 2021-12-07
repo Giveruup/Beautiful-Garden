@@ -33,6 +33,10 @@
 
 @media (max-width: 768px) {
 
+body {
+    background-color: rgba(83, 195, 81, 0.33);
+}
+
 .header {
     height: 100%;
     padding-bottom: 120px;
@@ -77,6 +81,14 @@
     right: -200px;
 }
 
+.header__circle--green,.header__circle--yellow {
+    display: none;
+}
+
+.give__circle--yellow {
+    display: none;
+}
+
 .we__give--content {
     flex-direction: column;
     align-items: flex-start;
@@ -108,6 +120,10 @@
     margin-top: 0;
 }
 
+.about__circle--green {
+    display: none;
+}
+
 .service__content {
     flex-direction: column;
     align-items: center;
@@ -118,18 +134,15 @@
 }
 
 .service__circle--yellow {
-  top: 530px;
-  right: 200px;
+  display: none;
 }
 
 .service__circle--green {
-  top: 550px;
-  right: 0px;
+    display: none;
 }
 
 .service__circle--green2 {
-  top: 700px;
-  right: 160px;
+    display: none;
 }
 
 .service__cy {
@@ -157,6 +170,10 @@
 
 .subscribe__content {
     padding: 50px 70px 100px;
+}
+
+.subscribe__circle--green,.subscribe__circle--yellow {
+    display: none;
 }
 
 .contacts__content {
