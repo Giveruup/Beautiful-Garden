@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="robots" content="none" />
+
     <title>Hobby - Beautiful Garden</title>
     <link rel="icon" href="img/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -54,13 +55,19 @@
         <div class="container">
             <div class="header__top">
                 <a href="#" class="logo__link"><img src="img/logo.svg" alt="Logo" class="logo__img">Hobby</a>
-                <ul class="nav">
+                <ul class="nav" id="nav">
                     <li class="nav__item"><a href="#" class="nav__link" data-scroll="#header">Home</a></li>
                     <li class="nav__item"><a href="#" class="nav__link" data-scroll="#about">About Us</a></li>
                     <li class="nav__item"><a href="#" class="nav__link" data-scroll="#service">Service</a></li>
                     <li class="nav__item"><a href="#" class="nav__link" data-scroll="#contact">Contact</a></li>
+                    <li class="nav__item"><button class="login__btn" type="button" name="button">Login</button></li>
                 </ul>
-                <button class="login__btn" type="button" name="button">Login</button>
+                <div class="hamburger" id='navToggle'>
+                    <span class="hamburger__line"></span>
+                    <span class="hamburger__line"></span>
+                    <span class="hamburger__line"></span>
+                </div>
+
             </div>
             <!--/header__top-->
 
@@ -319,13 +326,20 @@
                 </div>
                 <!--/support-->
                 <div class="contact">
-                    <h4 class="contact__title">Contact</h4>
-                    <a href="https://goo.gl/maps/i9gjDedj7zYLJz4HA" class="contact__link"
-                        target="_blank">Mirabazar-Subhanighat Rd, Sylhet-Bangladesh</a>
-                    <h4 class="contact__title">Email Us</h4>
-                    <a href="mailto:useremail@gmail.com" class="contact__link">useremail@gmail.com</a>
-                    <h4 class="contact__title">Call Us</h4>
-                    <a href="tel:+622120022012" class="contact__link">+6221.2002.2012</a>
+                    <div class="addres">
+                        <h4 class="contact__title">Contact</h4>
+                        <a href="https://goo.gl/maps/i9gjDedj7zYLJz4HA" class="contact__link"
+                            target="_blank">Mirabazar-Subhanighat Rd, Sylhet-Bangladesh</a>
+                    </div>
+                    <div class="mail">
+                        <h4 class="contact__title">Email Us</h4>
+                        <a href="mailto:useremail@gmail.com" class="contact__link">useremail@gmail.com</a>
+                    </div>
+                    <div class="phone">
+                        <h4 class="contact__title">Call Us</h4>
+                        <a href="tel:+622120022012" class="contact__link">+6221.2002.2012</a>
+                    </div>
+
                 </div>
             </div>
             <!--/contacts__content-->
@@ -341,7 +355,7 @@
                 <img src="img/footer__plant3.svg" alt="" class="footer__img">
                 <img src="img/footer__plant4.svg" alt="" class="footer__img">
                 <img src="img/footer__plant5.svg" alt="" class="footer__img">
-                <div class="footer__circle--yellow"></div>
+
             </div>
             <!--/footer__content-->
         </div>
